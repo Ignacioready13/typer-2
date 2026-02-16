@@ -44,6 +44,7 @@ export default defineConfig(({ mode }): UserConfig => {
   }
 
   return {
+    base: '/typer-2/', // Add this line!
     plugins: getPlugins({ isDevelopment, useSentry: useSentry, env }),
     build: getBuildOptions({ enableSourceMaps: useSentry }),
     css: getCssOptions({ isDevelopment }),
